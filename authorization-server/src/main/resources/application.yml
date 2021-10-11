@@ -1,0 +1,15 @@
+server:
+  port: 9302
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
+#    org.springframework.boot.autoconfigure: DEBUG
+
+spring:
+  profiles:
+    # 环境配置
+    active: dev
