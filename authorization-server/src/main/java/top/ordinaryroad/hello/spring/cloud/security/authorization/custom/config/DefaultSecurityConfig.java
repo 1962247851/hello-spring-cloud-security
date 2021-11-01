@@ -34,7 +34,6 @@ public class DefaultSecurityConfig {
         http
                 .authorizeRequests(authorizeRequests -> {
 //                    authorizeRequests.anyRequest().permitAll();
-                    authorizeRequests.antMatchers("/oauth2/default/v1/keys").permitAll();
                     authorizeRequests.anyRequest().authenticated();
                 })
                 .formLogin(withDefaults());
